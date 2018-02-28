@@ -372,7 +372,11 @@ font-family: 'Roboto', sans-serif;
 	height: 30px;
 }
 .activity button img{
-	height: 76px;
+	height: 66px;
+	animation-name: btnjump;
+	animation-duration: 0.5s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
 }
 .activity button{
 	border:none;
@@ -382,6 +386,15 @@ font-family: 'Roboto', sans-serif;
 	display: block;
 	margin-top: 45px;
 	background-color: #fff;
+height: 76px;
+}
+@keyframes btnjump {
+	from{
+		margin-top: 0px;
+	}
+	to{
+		margin-top: 10px;
+	}
 }
 @media only screen and (max-width: 1200px){
 #logo img{
